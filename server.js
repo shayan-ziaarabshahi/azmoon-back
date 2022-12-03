@@ -13,11 +13,11 @@ dotenv.config()
 const port = process.env.PORT || 5000
 const app = express()
 
-/* 
+
 app.use(cors({
-  origin:'http://127.0.0.1:3000',
+  origin:'https://azmoon.onrender.com',
 })) 
-*/
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
