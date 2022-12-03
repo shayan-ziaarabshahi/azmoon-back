@@ -25,7 +25,7 @@ app.use('/api/assessment', assessmentRoutes)
 
 
 // Serve frontend
-if (process.env.NODE_ENV === 'production') {
+/* if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../front/build')));
 
   app.get('*', (req, res) =>
@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
   );
 } else {
   app.get('/', (req, res) => res.send('Please set to production'));
-}
+} */
 
 app.use(errorHandler)
 app.listen(port, () => console.log(`server started on port ${port}`))
