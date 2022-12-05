@@ -14,7 +14,7 @@ const app = express()
 
 
 app.use(cors({
-  origin:['*','https://azmoon.onrender.com'],
+  origin:'https://azmoon.onrender.com',
 })) 
 
 
