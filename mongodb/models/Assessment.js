@@ -173,22 +173,10 @@ const assessmentSchema = new mongoose.Schema({
          }
       }
    },
-   schoolName: {
-      type: String,
-      required: true
-   },
-   grade: {
-      type: String,
-      required: true
-   },
-   birthday: {
-      type: {
-         _id: false,
-         day: String,
-         month: String,
-         year: String,
-      }
-   }
+   schoolName: String,
+   grade: String,
+   age: String,
+   email: String
 }, {
    timestamps: true
 })
